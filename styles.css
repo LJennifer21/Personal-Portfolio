@@ -75,12 +75,20 @@ h2{
 
 /*break*/
 .intro h1 {
-    padding: 100px;
+   margin-bottom:60px;
+   padding-top: 100px;
+
+    
     
 }
 .intro p {
     padding-left: 400px;
     width: 800px;
+    
+    
+    
+    
+    
     
     
     
