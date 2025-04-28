@@ -93,25 +93,13 @@ h2{
     
     
 }
-.skills {
-    padding-left: 40px; /* spacing from the left side */
-    padding-top: 50px; /* spacing between intro/skills */
-    margin-left: 400px;
+#link {
+    text-decoration: none;
 }
-.skills td {
-    padding: 10px;
-    font-size: 14px;
-    margin-left: 400px;
-    
-}
-.contact td{
-    font-family: 'DM Sans';
-    padding-left: 50px;
-    margin-left: 400px;
-
-}
-.skills .detailTitle {
+#link a:hover{
     text-decoration: underline;
+    color: black;
+    
 }
 
 hr { /*look for why you need this*/
@@ -229,5 +217,6 @@ h3{
 
 
 }
+
     
     
