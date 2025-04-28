@@ -93,12 +93,13 @@ h2{
     
     
 }
-#link {
+#link a{
     text-decoration: none;
+    color: black;
 }
 #link a:hover{
     text-decoration: underline;
-    color: black;
+    color: white;
     
 }
 
