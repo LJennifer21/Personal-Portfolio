@@ -162,7 +162,7 @@ h3{
         
     }
 /*break*/
-.proj{
+.proj1{
     background-color: beige;
     border: 5px solid wheat;
     border-radius: 10px;
@@ -188,6 +188,40 @@ h3{
         color:black;
         
         margin-top: 15px;
+
+    }
+    
+    
+
+
+}
+.proj2{
+    background-color: beige;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 100px;
+    height: 200px;
+    /*color: black;*/
+    
+    text-align: center;
+    /*text-decoration: none;*/
+    font-family: 'Times New Roman';
+    
+    h5 a{
+        color: black;
+        text-decoration: none;
+        /*change color of the EquiBot text*/
+    }
+    h5 a:hover{
+        text-decoration: underline;
+        color: rgb(196, 157, 215);;
+    }
+    p{
+        color:black;
+        
+        margin-top: 25px;
 
     }
     
