@@ -1,12 +1,20 @@
 let themeButton = document.getElementById("theme-button");
 
 const applysavetheme = () =>{
-    const savetheme  = localStorage.getItem("light-mode");//storing light mode
+    const savetheme  = localStorage.getItem("theme");
     if (savetheme){
         document.body.classList.add(savetheme);
+        if (savetheme === "dark-mode"){
+            themeButton.textContent="Light Mode";
+
+        }
+        else{
+            themeButton.textContent = "Dark Mode";
+        }
         
     }else{
-        document.body.classList.add("dark-mode");//defult dark mode
+        document.body.classList.add("light-mode");//defult dark mode
+        themeButton.textContent = "Light Mode";
     }
 }
 
