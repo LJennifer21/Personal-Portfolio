@@ -7,9 +7,13 @@
 
 }
 body{
+    
     margin: 0;
     font-family: 'Arial, Tahoma, Serif';
     background-color:  rgb(0, 0, 0);
+   
+    
+    
     
 }
 .footer-container{
@@ -24,7 +28,7 @@ body{
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    padding: 20px 0px;
+    padding: 15px 0px;
     
 }
 
@@ -45,10 +49,12 @@ h2{
 
     nav {
         display:flex;
-            
+        position:fixed;
         justify-content: space-between;
         padding: 1rem 2rem;
+        width: 95%;
         
+       
             
             
         background: rgb(182, 162, 255);
@@ -63,23 +69,36 @@ h2{
             
     }
     nav li { /* space between navbar links */
-        padding-left: 1rem;
+        padding-left: 3px;
         list-style-type: none;
+        
         
             
     }
     nav a {
         text-decoration: none; /* get rid of hyperlink underline */
         color: black;
-            
-            
-            
+        border: 2px solid transparent;
+        padding :5px;
+   
+    }
+    nav button{
+        margin-top: -8px;
+        margin-left: 10px;;
+       
     }
     
-   nav button{
     
-    margin-top: -5px;
-   }
+    nav a:hover{
+        border: 2px solid rgba(180, 176, 181, 0.996);
+        border-radius: 5px;
+        background-color: rgba(180, 176, 181, 0.996);
+       
+ 
+;
+    }
+    
+   
     
     #theme-button{
        
@@ -113,96 +132,102 @@ h2{
     }
     .light-mode .footer-container{
         background-color: rgb(156, 156, 156);
+        
     }
     .light-mode .name h3{
         background-color: rgb(190, 171, 208);
     }
+    .light-mode .projects-items a:hover{
+        color: gray;
+    }
+    .light-mode #project1, .light-mode #project2, .light-mode #project3{
+        border: 5px solid black;
+    }
+  
     
     
 
         
 
 
-/*break*/
-.intro{
-    
-    display: flex;
-  flex-direction: row;
-  color: white;
-  text-align: left;
-  padding: 100px 100px;
-  width: 75%;
- 
-}
-
-
-.intro #greeting{
-    display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  
-  
-  
-}
-.intro #link{
-    width: fit-content;
-    padding-top: 60px;
-}
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-#link a{
-    text-decoration: none;
-    color: black;
-    
-    
-}
-#link a:hover{
-    text-decoration: underline;
+    /*break*/
+    .intro{
+        
+        display: flex;
+    flex-direction: row;
     color: white;
+    text-align: left;
+    padding: 160px 130px;
+    width: 75%;
     
-    
-}
+    }
 
-hr { /*look for why you need this*/
-    width: 90%;
-    margin: auto;
-}
-/* break from top*/
 
-h3{
+    .intro #greeting{
+        display: flex;
+    flex-direction: column;
+    padding-left: 100px;
     
-    font-family: 'Times New Roman';
-    text-align: center;
-    border-radius: 10px;
-    justify-content: center;
-    margin-top: 250px;
     
-    background-color: rgb(196, 157, 215);
-    border: 5px solid rgb(227, 225, 254);
-    width: 400px; 
-    margin: 1rem auto;
-    margin-top: 250px;
-    height:60px;
     
-}
+    }
+    .intro #link{
+        width: fit-content;
+        padding-top: 60px;
+    }
 
-    .name p{
-        width: 785px;
-        border-right: 3px solid white ;
-        overflow:hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(30), cursor .6s step-end infinite alternate ;
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+    #link a{
+        text-decoration: none;
+        color: black;
+        
+        
+    }
+    #link a:hover{
+        text-decoration: underline;
+        color: white;
+        
+        
+    }
+
+    /* break from top*/
+
+    h3{
+        
+        font-family: 'Times New Roman';
+        text-align: center;
+        border-radius: 10px;
+        justify-content: center;
+        margin-top: 250px;
+        
+        background-color: rgb(196, 157, 215);
+        border: 5px solid rgb(227, 225, 254);
+        width: 400px; 
+        margin: 1rem auto;
+        margin-top: 250px;
+        height:60px;
+        
+    }
+
+/*Home page*/
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+        
 
     }
     @keyframes cursor {
@@ -217,59 +242,73 @@ h3{
 
     .name p{
         text-align: center;
-        margin: 1rem auto;
+        
+        
         margin-top: 150px;
+        width: 785px;
+        border-right: 3px solid white ;
+        overflow:hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30), cursor .6s step-end infinite alternate ;
         
     }
     
-/*break*/
+/*projects*/
 
 
-.projects-items, 
-.projects-items a, 
-.projects-items p{
-display: flex;
-  flex-direction: column;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  
-  
-  
-  
-  
-  
-  
-  
+
+    .projects-items a, 
+    .projects-items p{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    padding: 10px;
     }
 
-#project1, #project2{
-   
-  border: 5px solid rgb(248, 244, 244);
-  border-radius: 10px;
-  width: fit-content;
-  padding: 20px;
-  background-color: wheat;
-  
- 
-  margin: 10px;
-  
-  
+    .projects-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px;
+       
+    } 
 
 
-  
+    #project1, #project2, #project3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(248, 244, 244);
+    border-radius: 10px;
+    width: 75%;
+    padding: 20px;
+    background-color: wheat;
+    
+    margin: 10px;
+    
+    
 
-}
 
-.projects-items #contributer{
-    border: 2px solid black ;
-    background-color: black;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-   
-}
+    
+
+    }
+    .projects-items a:hover{
+        color: white;
+
+
+    }
+
+    .projects-items #contributer{
+        border: 2px solid black ;
+        background-color: black;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        
+    
+    }
 
     
 
