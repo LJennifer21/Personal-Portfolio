@@ -1,0 +1,517 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans';
+    color: rgb(255, 255, 255);
+
+}
+body{
+    
+    margin: 0;
+    font-family: 'Arial, Tahoma, Serif';
+    background-color:  rgb(0, 0, 0);
+   
+    
+    
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 0px;
+    
+}
+
+
+    
+    
+table{
+    font-family: 'DM Sans';
+    margin-left: 400px;
+}
+/*break*/
+
+h2{
+    color: rgb(0, 0, 0);
+    
+
+}
+
+    nav {
+        display:flex;
+        position:fixed;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 96%;
+        
+       
+            
+            
+        background: rgb(182, 162, 255);
+            
+    }
+    nav ul { /* formatting navbar links to be side-to-side */
+        display: flex;
+        list-style: none;
+        
+        
+            
+            
+            
+            
+    }
+    nav li { /* space between navbar links */
+        padding-left: 5px;
+        list-style-type: none;
+        
+        
+        
+            
+    }
+    nav a {
+        text-decoration: none; /* get rid of hyperlink underline */
+        color: black;
+        border: 2px solid transparent;
+        padding :5px;
+   
+    }
+    nav button{
+        margin-left: 5px;;
+        
+        margin-top: -8px;
+       
+       
+       
+    }
+    
+    
+    nav a:hover{
+        border: 2px solid rgba(180, 176, 181, 0.996);
+        border-radius: 5px;
+        background-color: rgba(180, 176, 181, 0.996);
+       
+ 
+;
+    }
+    
+    
+   
+    
+    #theme-button{
+       
+        background-image: linear-gradient(to right, rgb(204, 205, 255), rgb(118, 145, 241));
+        border-radius: 5px;
+        padding: 3px;
+        
+        color: black;
+        
+        
+
+    }
+
+    
+
+
+    /*toggle light mode*/
+    .light-mode {
+        background-color: white;
+        
+        
+    }
+    .light-mode #greeting h1, 
+    .light-mode #greeting p, 
+    .light-mode .name h3, 
+    .light-mode .name p,
+    .light-mode #project-category, 
+    .light-mode .digital-marketing-projects h1{
+        color: black;
+        
+    }
+    .light-mode nav{
+        background-color: rgb(197, 197, 244);
+    }
+    .light-mode .footer-container{
+        background-color: rgb(156, 156, 156);
+        
+    }
+    .light-mode .name h3{
+        background-color: rgb(190, 171, 208);
+    }
+    .light-mode .projects-items a:hover{
+        color: gray;
+    }
+    .light-mode #project1, 
+    .light-mode #project2, 
+    .light-mode #project3,
+    .light-mode .digital-marketing-projects #project4,
+    .light-mode .digital-marketing-projects #project5{
+        border: 4px solid black;
+    }
+    .light-mode .digital-marketing-projects{
+        background-color: rgb(227, 225, 254);
+        
+
+    }
+    .light-mode .digital-marketing-projects #project4,
+    .light-mode .digital-marketing-projects #project5{
+            border: 4px solid rgb(93, 75, 113);
+    }
+    .light-mode .digital-marketing-projects #project4,
+    .light-mode .digital-marketing-projects #project5, .light-mode .digital-marketing-projects h2{
+        background-color:  rgb(146, 123, 157);
+        color:white;
+        
+    }
+    .light-mode .projects-items hr, .light-mode .digital-marketing-projects hr{
+        border: 1px solid black;
+    }
+    
+  
+    
+    
+
+        
+
+
+    /*break*/
+    .intro {
+        
+        display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: left;
+    padding: 160px 130px;
+    width: 75%;
+    
+    }
+
+
+    .intro #greeting{
+        display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    
+    
+    
+    }
+    .intro #link{
+        width: fit-content;
+        padding-top: 40px;
+    }
+
+
+    #link a{
+        text-decoration: none;
+        color: black;
+        
+        
+    }
+    #link a:hover{
+        text-decoration: underline;
+        color: white;
+        
+        
+    }
+
+    /* break from top*/
+
+    h3{
+        
+        font-family: 'Times New Roman';
+        text-align: center;
+        border-radius: 10px;
+        justify-content: center;
+        margin-top: 250px;
+        
+        background-color: rgb(196, 157, 215);
+        border: 5px solid rgb(227, 225, 254);
+        width: 400px; 
+        margin: 1rem auto;
+        margin-top: 250px;
+        height:60px;
+        
+    } 
+  
+
+
+    .float1, .float2, .float3, .float4{
+        font-size: 20px;
+  
+        color: white;
+        display: flex;
+        animation: float 3s ease-in-out forwards;
+        background-color: rgb(196, 157, 215);
+        border: 2px solid rgb(227, 225, 254);
+        text-align: center;
+        
+        
+        border-radius: 5px;
+        width: 190px;
+        text-indent: 5px;
+       
+        height:50px;
+    }
+    .float1 {
+        animation-name: float1;
+        width: 180px;
+        
+    }
+    .float2 {
+        animation-name: float2;
+        width: 150px;
+        
+       
+    }
+    .float3 {
+        animation-name: float3;
+        width: 300px
+        
+    }
+    .float4 {
+        animation-name: float4;
+        width: 300px
+        
+    }
+    
+
+    @keyframes float1 {
+        0% {
+        transform: translate(0px, -8px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(0px, 30px);
+            opacity: 1;
+        }
+    }
+    @keyframes float2 {
+        0% {
+        transform: translate(0px, -200px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-5px, -230px);
+            opacity: 1;
+        }
+    }
+    @keyframes float3 {
+        0% {
+        transform: translate(360px, -160px);
+            opacity: 0;
+        }
+        50% {
+            
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(400px, -183px);
+            opacity: 1;
+        }
+    }
+    @keyframes float4 {
+        0% {
+        transform: translate(-365px, -215px);
+            opacity: 0;
+        }
+        50% {
+            
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-400px, -236px);
+            opacity: 1;
+        }
+    }
+    
+    
+
+/*Home page*/
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+        
+
+    }
+    @keyframes cursor {
+        50% {border-color: rgb(196, 157, 215)}
+        
+    }
+
+    @keyframes typing{
+        from  { width :0px}
+    }
+        
+
+    .name p{
+        text-align: center;
+        
+        
+        margin-top: 100px;
+        width: 570px;
+        border-right: 3px solid white ;
+        overflow:hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30), cursor .6s step-end infinite alternate ;
+        
+    }
+    
+/*projects*/
+
+
+
+    .projects-items a, 
+    .projects-items p
+    {
+    
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    }
+
+    /* if I want to make the projects boxes into rows*/
+    .projects-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 130px;
+        
+       
+    } 
+    .projects-row {
+    display: flex;
+    
+    justify-content: center;
+    
+ 
+    }
+    
+
+   
+    .projects-items h2:hover{
+        color: white;
+    }
+    .projects-items hr{
+    width: 75%;
+    display: block;
+    border: 1px solid white;
+    
+    
+    }
+    
+   
+
+    #project1, #project2, #project3{
+    border: 4px solid rgb(248, 244, 244);
+    border-radius: 10px;
+    width: 75%;
+    padding: 20px;
+    background-color: wheat;
+
+    margin: 10px;
+   
+
+    }
+
+    .digital-marketing-projects video{
+
+        pointer-events: none;
+        
+        height: 500px;
+        width: 400px;
+        
+    
+    }
+    .digital-marketing-projects h1,
+    .projects-items h1 {
+        padding: 10px;
+        color: white;
+        
+    }
+    .digital-marketing-projects h2 {
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+    .digital-marketing-projects hr{
+        width: 75%;
+        display: block;
+        border: 1px solid white;
+        margin: 10px auto;
+    }
+    
+   
+    .digital-marketing-projects #project4 {
+       
+        border-radius: 10px;
+        border: 4px solid white;
+        background-color:  rgb(227, 225, 254);
+        align-items: center;
+        padding: 15px;
+        width: 400px;
+        height: 550px;
+        margin: 10px;
+        
+        
+        
+    }
+    .digital-marketing-projects #project5{
+        border-radius: 10px;
+        border: 4px solid white;
+        background-color:  rgb(227, 225, 254);
+        align-items: center;
+        padding: 15px;
+        width: 400px;
+        height: 550px;
+        margin: 10px;
+    }
+    .digital-marketing-projects #project5 img{
+        height: 500px;
+        width: 400px;
+    }
+
+    .digital-marketing-projects{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(146, 123, 157);
+        padding: 80px;
+        
+    }
+   
+
+    .projects-items #contributer{
+        border: 2px solid black ;
+        background-color: black;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        
+    
+    }
+
+
+
+    
+    
