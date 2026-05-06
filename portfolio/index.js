@@ -1,5 +1,4 @@
 let themeButton = document.getElementById("theme-button");
-
 const applysavetheme = () =>{
     const savetheme  = localStorage.getItem("theme");
     if (savetheme){
